@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Ezan's Portfolio</title>
+  <link rel="stylesheet" href="../shared.css">
+  <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+
+<header class="site-header">
+  <button class="hamburger" id="nav-toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="site-nav" id="site-nav">
+    <a href="../home/home.html">Home</a>
+    <a href="../about/about.html">About Me</a>
+    <a href="../education/education.html">Education</a>
+    <a href="../experiences/experiences.html">Experiences</a>
+    <a href="projects.html" class="active">Projects</a>
+  </nav>
+  <label class="theme-switch" for="theme-toggle" aria-label="Toggle light and dark theme">
+    <input class="theme-checkbox" id="theme-toggle" type="checkbox">
+    <span class="theme-track" aria-hidden="true">
+      <span class="theme-thumb"></span>
+    </span>
+  </label>
+</header>
+
+<main class="page-content">
+
+  <p class="eyebrow">Selected Work</p>
+  <h1 class="page-title">Projects</h1>
+  <div class="divider"></div>
+
+  <div class="entry-card project-card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Treebot</div>
+        <div class="card-sub">Tree-climbing robot with remote web control and chainsaw attachment</div>
+      </div>
+      <span class="card-date">May 2026</span>
+    </div>
+    <div class="card-tags">
+      <span class="tag">Python</span><span class="tag">Raspberry Pi</span>
+      <span class="tag">Linear Actuators</span><span class="tag">Servos</span>
+      <span class="tag">Power System Design</span>
+    </div>
+    <ul class="card-bullets">
+      <li>Designed a web-controlled robot that climbs 6–12 inch tree trunks using dual linear actuators and servo-driven gripping arms, reaching heights of up to 20 feet.</li>
+      <li>Developed a Wi-Fi–based control system with live video streaming and sensor feedback for remote operation.</li>
+      <li>Integrated actuators, motor drivers, sensors, and power electronics; validated system performance using oscilloscopes and multimeters.</li>
+      <li>Designed a 120V AC power system with onboard voltage regulation and safety mechanisms for reliable operation.</li>
+    </ul>
+    <div class="award">2026 Boston University Senior Design — Best PPE Award</div>
+  </div>
+
+  <div class="entry-card project-card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">New England Power Grid Modeling &amp; Optimization (<a href="../sources/projects/ec417%20report.pdf" target="_blank" rel="noopener">Report</a>)</div>
+        <div class="card-sub">ML load forecasting and DC optimal power flow on the IEEE-39 bus system</div>
+      </div>
+      <span class="card-date">Dec 2025</span>
+    </div>
+    <div class="card-tags">
+      <span class="tag">MATLAB</span><span class="tag">Power Systems</span>
+      <span class="tag">Convex Optimization</span><span class="tag">Machine Learning</span>
+    </div>
+    <ul class="card-bullets">
+      <li>Developed a machine learning load forecasting model using convex optimization to predict AI-driven electricity demand growth in ISO New England through 2035.</li>
+      <li>Simulated grid behavior using DC Optimal Power Flow (DC OPF) on the IEEE-39 bus system, analyzing congestion, locational marginal prices (LMPs), and system cost under high-load scenarios.</li>
+      <li>Designed and evaluated generation expansion strategies (repowering and new generation placement), reducing congestion and restoring feasibility while quantifying tradeoffs in cost and carbon emissions.</li>
+    </ul>
+  </div>
+
+  <div class="entry-card project-card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Control-Z Android App</div>
+        <div class="card-sub">Event search and reminder app using the Ticketmaster API</div>
+      </div>
+      <span class="card-date">May 2025</span>
+    </div>
+    <div class="card-tags">
+      <span class="tag">Java</span><span class="tag">Android Studio</span>
+      <span class="tag">Ticketmaster API</span><span class="tag">JSON</span>
+      <span class="tag">JUnit</span>
+    </div>
+    <ul class="card-bullets">
+      <li>Built an Android app that lets users search, filter, and view Ticketmaster events by ZIP code and event type.</li>
+      <li>Added saved event details, notifications, reminders, and custom user-created events.</li>
+      <li>Implemented persistent local storage so saved Ticketmaster events and user-created events remain available across app sessions.</li>
+    </ul>
+  </div>
+
+  <div class="entry-card project-card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">LEGO × Minecraft Modular Lamp System</div>
+        <div class="card-sub">Physical redstone logic with servo actuation and a 1000-lumen lamp</div>
+      </div>
+      <span class="card-date">Feb 2025</span>
+    </div>
+    <div class="card-tags">
+      <span class="tag">C++</span><span class="tag">Power System Design</span>
+      <span class="tag">Woodworking</span><span class="tag">Embedded Systems</span>
+    </div>
+    <ul class="card-bullets">
+      <li>Built a physical recreation of Minecraft redstone logic where a removable torch triggers different outputs based on placement, <a href="../sources/projects/1.%20piston.gif" target="_blank" rel="noopener">actuating a servo-driven</a> piston or <a href="../sources/projects/2.%20lamp.gif" target="_blank" rel="noopener">turning on a 1000-lumen lamp</a>.</li>
+      <li>Integrated mechanical, electrical, and LEGO-inspired modular housing components to ensure stable actuation and repeatable switching behavior.</li>
+    </ul>
+    <a class="award award-link" href="https://www.bu.edu/eng/academics/teaching-and-innovation/singh-imagineering-lab-silab/competitions/lutron-lighting-competition/lutron-2025-competition/" target="_blank" rel="noopener">First Place — 2025 Boston University Lutron Lighting Competition</a>
+  </div>
+
+  <div class="entry-card project-card">
+    <div class="card-header">
+      <div>
+        <div class="card-title">Morse Decoder</div>
+        <div class="card-sub">Hardware encoder/decoder with 7-segment display output</div>
+      </div>
+      <span class="card-date">Dec 2024</span>
+    </div>
+    <div class="card-tags">
+      <span class="tag">Embedded Systems</span><span class="tag">Digital Logic</span>
+    </div>
+    <ul class="card-bullets">
+      <li>Programmed a Morse encoder to process button inputs for dot, dash, enter, delete, and clear commands.</li>
+      <li>Implemented a decoder to convert inputs into characters for display on a monitor and 7-segment display.</li>
+    </ul>
+  </div>
+
+  <div class="divider"></div>
+
+  <p class="eyebrow">Technical Skills</p>
+
+  <div class="entry-card">
+    <div class="skills-grid">
+      <div class="skill-group">
+        <div class="skill-heading">Programming Languages</div>
+        <div class="skill-pills">
+          <span class="skill-pill">MATLAB</span>
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">C++</span>
+          <span class="skill-pill">Java</span>
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">HTML</span>
+          <span class="skill-pill">CSS</span>
+          <span class="skill-pill">React</span>
+          <span class="skill-pill">R</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-heading">Software &amp; CAD</div>
+        <div class="skill-pills">
+          <span class="skill-pill">AutoCAD</span>
+          <span class="skill-pill">LTspice</span>
+          <span class="skill-pill">KiCad</span>
+          <span class="skill-pill">Fusion 360</span>
+          <span class="skill-pill">OnShape</span>
+          <span class="skill-pill">Tinkercad</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-heading">Lab Instruments</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Oscilloscope</span>
+          <span class="skill-pill">Multimeter</span>
+          <span class="skill-pill">Power Supply</span>
+          <span class="skill-pill">Function Generator</span>
+          <span class="skill-pill">LCR Meter</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-heading">Manufacturing</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Soldering</span>
+          <span class="skill-pill">CNC Machining</span>
+          <span class="skill-pill">3D Printing</span>
+          <span class="skill-pill">Waterjet Cutting</span>
+          <span class="skill-pill">Woodworking</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 Ezan Khan</span>
+  <a href="mailto:ezankhan2004@gmail.com">Contact Me</a>
+  <span id="live-clock"></span>
+  <div class="footer-links">
+    <a href="../credits/credits.html">Credits</a>
+  </div>
+</footer>
+
+<script src="../shared.js"></script>
+</body>
+</html>

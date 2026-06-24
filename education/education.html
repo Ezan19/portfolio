@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education | Ezan's Portfolio</title>
+  <link rel="stylesheet" href="../shared.css">
+  <link rel="stylesheet" href="education.css">
+</head>
+<body>
+
+<header class="site-header">
+  <button class="hamburger" id="nav-toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="site-nav" id="site-nav">
+    <a href="../home/home.html">Home</a>
+    <a href="../about/about.html">About Me</a>
+    <a href="education.html" class="active">Education</a>
+    <a href="../experiences/experiences.html">Experiences</a>
+    <a href="../projects/projects.html">Projects</a>
+  </nav>
+  <label class="theme-switch" for="theme-toggle" aria-label="Toggle light and dark theme">
+    <input class="theme-checkbox" id="theme-toggle" type="checkbox">
+    <span class="theme-track" aria-hidden="true">
+      <span class="theme-thumb"></span>
+    </span>
+  </label>
+</header>
+
+<main class="page-content">
+
+  <p class="eyebrow">Academic Background</p>
+  <h1 class="page-title">Education</h1>
+  <div class="divider"></div>
+
+  <!-- ── BOSTON UNIVERSITY ─────────────────────── -->
+  <div class="entry-card education-card bu-card">
+    <div class="card-header">
+      <div class="card-header-left">
+        <div class="card-title">Boston University</div>
+        <div class="card-sub">Bachelor of Science Electrical Engineering &nbsp;·&nbsp; Computer Science Minor &nbsp;·&nbsp; Technology Innovation Concentration</div>
+        <div class="card-meta">Boston, MA &nbsp;·&nbsp; GPA 3.53 / 4.00</div>
+      </div>
+      <span class="card-date">May 2026</span>
+    </div>
+
+    <div class="cw-label">Coursework</div>
+
+    <div class="cw-tabs" role="tablist">
+      <button class="cw-tab active" data-tab="ee" role="tab" aria-selected="true">Electrical Engineering</button>
+      <button class="cw-tab" data-tab="cs" role="tab" aria-selected="false">Computer Science</button>
+      <button class="cw-tab" data-tab="innovation" role="tab" aria-selected="false">Technology Innovation</button>
+      <button class="cw-tab" data-tab="stem" role="tab" aria-selected="false">STEM Core</button>
+      <button class="cw-tab" data-tab="humanities" role="tab" aria-selected="false">Humanities</button>
+    </div>
+
+    <div class="cw-panel active" id="tab-ee">
+      <div class="course-grid">
+        <a href="https://www.bu.edu/academics/eng/courses/eng-ec-412/" target="_blank" rel="noopener" class="course-pill">Analog Electronics</a>
+        <a href="https://www.bu.edu/academics/eng/courses/eng-ec-583/" target="_blank" rel="noopener" class="course-pill">Power Electronics &amp; Energy Systems</a>
+        <a href="https://www.bu.edu/academics/eng/courses/eng-ec-455/" target="_blank" rel="noopener" class="course-pill">Electromagnetic Systems I</a>
+        <a href="https://www.bu.edu/academics/eng/courses/eng-ec-417/" target="_blank" rel="noopener" class="course-pill">Electric Energy Systems</a>
+        <a href="https://www.bu.edu/academics/eng/courses/eng-ec-401/" target="_blank" rel="noopener" class="course-pill">Signals and Systems</a>
+        <a href="https://www.bu.edu/academics/eng/courses/eng-ec-410/" target="_blank" rel="noopener" class="course-pill">Introduction to Electronics</a>
+        <a href="https://www.bu.edu/academics/eng/courses/eng-ec-311/" target="_blank" rel="noopener" class="course-pill">Introduction to Logic Design</a>
+        <a href="https://www.bu.edu/academics/eng/courses/eng-ek-307/" target="_blank" rel="noopener" class="course-pill">Electric Circuits</a>
+        <a href="https://www.bu.edu/academics/eng/courses/eng-ec-463/" target="_blank" rel="noopener" class="course-pill">Senior Design Project I</a>
+        <a href="https://www.bu.edu/academics/eng/courses/eng-ec-464/" target="_blank" rel="noopener" class="course-pill">Senior Design Project II</a>
+      </div>
+    </div>
+
+    <div class="cw-panel" id="tab-cs">
+      <div class="course-grid">
+        <a href="https://www.bu.edu/academics/cas/courses/cas-cs-111/" target="_blank" rel="noopener" class="course-pill">Introduction to Computer Science I</a>
+        <a href="https://www.bu.edu/academics/eng/courses/eng-ek-125/" target="_blank" rel="noopener" class="course-pill">Introduction to Programming for Engineers</a>
+        <a href="https://www.bu.edu/academics/cas/courses/cas-cs-131/" target="_blank" rel="noopener" class="course-pill">Combinatoric Structures</a>
+        <a href="https://www.bu.edu/academics/cas/courses/cas-cs-330/" target="_blank" rel="noopener" class="course-pill">Analysis of Algorithms</a>
+        <a href="https://www.bu.edu/academics/eng/courses/eng-ec-327/" target="_blank" rel="noopener" class="course-pill">Introduction to Software Engineering</a>
+        <a href="https://www.bu.edu/academics/eng/courses/eng-ec-441/" target="_blank" rel="noopener" class="course-pill">Introduction to Computer Networking</a>
+        <a href="https://www.bu.edu/academics/cas/courses/cas-cs-103/" target="_blank" rel="noopener" class="course-pill">Internet Technologies &amp; Web Programming</a>
+      </div>
+    </div>
+
+    <div class="cw-panel" id="tab-innovation">
+      <div class="course-grid">
+        <a href="https://www.bu.edu/academics/questrom/courses/qst-si-480/" target="_blank" rel="noopener" class="course-pill">Business of Technology Innovation</a>
+        <a href="https://www.bu.edu/academics/questrom/courses/qst-si-482/" target="_blank" rel="noopener" class="course-pill">Strategy for Technology-Based Firms</a>
+        <a href="https://www.bu.edu/academics/eng/courses/eng-me-518/" target="_blank" rel="noopener" class="course-pill">Product Quality</a>
+      </div>
+    </div>
+
+    <div class="cw-panel" id="tab-stem">
+      <div class="course-grid">
+        <a href="https://www.bu.edu/academics/cas/courses/cas-ma-123/" target="_blank" rel="noopener" class="course-pill">Calculus I</a>
+        <a href="https://www.bu.edu/academics/cas/courses/cas-ma-124/" target="_blank" rel="noopener" class="course-pill">Calculus II</a>
+        <a href="https://www.bu.edu/academics/cas/courses/cas-ma-225/" target="_blank" rel="noopener" class="course-pill">Multivariate Calculus</a>
+        <a href="https://www.bu.edu/academics/cas/courses/cas-ma-226/" target="_blank" rel="noopener" class="course-pill">Differential Equations</a>
+        <a href="https://www.bu.edu/academics/cas/courses/cas-py-211/" target="_blank" rel="noopener" class="course-pill">General Physics I</a>
+        <a href="https://www.bu.edu/academics/cas/courses/cas-py-212/" target="_blank" rel="noopener" class="course-pill">General Physics II</a>
+        <a href="https://www.bu.edu/academics/cas/courses/cas-py-313/" target="_blank" rel="noopener" class="course-pill">Waves and Modern Physics</a>
+        <a href="https://www.bu.edu/academics/cas/courses/cas-ch-131/" target="_blank" rel="noopener" class="course-pill">General Chemistry for Engineers</a>
+        <a href="https://www.bu.edu/academics/eng/courses/eng-ek-103/" target="_blank" rel="noopener" class="course-pill">Computational Linear Algebra</a>
+        <a href="https://www.bu.edu/academics/eng/courses/eng-ek-381/" target="_blank" rel="noopener" class="course-pill">Probability, Statistics &amp; Data Science for Engineers</a>
+        <a href="https://www.bu.edu/academics/eng/courses/eng-ek-301/" target="_blank" rel="noopener" class="course-pill">Engineering Mechanics I</a>
+        <a href="https://www.bu.edu/academics/eng/courses/eng-ek-210/" target="_blank" rel="noopener" class="course-pill">Introduction to Engineering Design</a>
+        <a href="https://www.bu.edu/academics/eng/courses/eng-ek-131/" target="_blank" rel="noopener" class="course-pill">Introduction to Engineering</a>
+      </div>
+    </div>
+
+    <div class="cw-panel" id="tab-humanities">
+      <div class="course-grid">
+        <a href="https://www.bu.edu/academics/cas/courses/cas-ph-155/" target="_blank" rel="noopener" class="course-pill">Politics and Philosophy</a>
+        <a href="https://www.bu.edu/academics/cas/courses/cas-ph-100/" target="_blank" rel="noopener" class="course-pill">Introduction to Philosophy</a>
+        <a href="https://www.bu.edu/academics/cas/courses/cas-lj-283/" target="_blank" rel="noopener" class="course-pill">Japanese Cinema, Culture &amp; Film</a>
+        <a href="https://www.bu.edu/academics/cas/courses/cas-ir-349/" target="_blank" rel="noopener" class="course-pill">International Relations 1900–1945</a>
+        <a href="https://www.bu.edu/academics/cas/courses/cas-wr-120/" target="_blank" rel="noopener" class="course-pill">First-Year Writing Seminar</a>
+        <a href="https://www.bu.edu/academics/cas/courses/cas-wr-153/" target="_blank" rel="noopener" class="course-pill">Writing, Research &amp; Inquiry</a>
+      </div>
+    </div>
+
+    <div class="hs-section">
+      <div class="hs-label">Activities &amp; Societies</div>
+      <div class="activities-list">
+        <span class="activity-chip">Member, Society of Asian Scientists and Engineers (SASE)</span>
+        <span class="activity-chip">Member, Institute of Electrical and Electronics Engineers (IEEE)</span>
+        <span class="activity-chip">Member, Inaugural Boston University QuestBridge Chapter</span>
+      </div>
+    </div>
+
+    <div class="hs-section">
+      <div class="hs-label">Awards &amp; Honors</div>
+      <div class="activities-list">
+        <span class="activity-chip">Boston University Senior Design Best PPE Award (December 2025)</span>
+        <span class="activity-chip">Boston University Lutron Lighting Competition First Place (February 2025)</span>
+        <span class="activity-chip">IAC Charitable Foundation Scholarship Recipient (November 2024)</span>
+        <span class="activity-chip">Boston University Student Employee of the Year Nominee (March 2024)</span>
+        <span class="activity-chip">College of Engineering Dean's List (December 2022)</span>
+        <span class="activity-chip">Boston University QuestBridge Scholar (December 2021)</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── CARDOZO HIGH SCHOOL ───────────────────── -->
+  <div class="entry-card education-card bnchs-card">
+    <div class="card-header">
+      <div class="card-header-left">
+        <div class="card-title">Benjamin N. Cardozo High School</div>
+        <div class="card-sub">High School Diploma &nbsp;·&nbsp; DaVinci Biomedical Sciences Program</div>
+        <div class="card-meta">Queens, NY &nbsp;·&nbsp; 97.78% Unweighted</div>
+      </div>
+      <span class="card-date">June 2022</span>
+    </div>
+
+    <div class="hs-section">
+      <div class="hs-label">Advanced Placement Coursework</div>
+      <div class="course-grid">
+        <a href="https://apstudents.collegeboard.org/courses/ap-calculus-ab" target="_blank" rel="noopener" class="course-pill">Calculus AB</a>
+        <a href="https://apstudents.collegeboard.org/courses/ap-computer-science-a" target="_blank" rel="noopener" class="course-pill">Computer Science A</a>
+        <a href="https://apstudents.collegeboard.org/courses/ap-macroeconomics" target="_blank" rel="noopener" class="course-pill">Macroeconomics</a>
+        <a href="https://apstudents.collegeboard.org/courses/ap-microeconomics" target="_blank" rel="noopener" class="course-pill">Microeconomics</a>
+        <a href="https://apstudents.collegeboard.org/courses/ap-english-language-and-composition" target="_blank" rel="noopener" class="course-pill">English Language &amp; Composition</a>
+        <a href="https://apstudents.collegeboard.org/courses/ap-psychology" target="_blank" rel="noopener" class="course-pill">Psychology</a>
+        <a href="https://apstudents.collegeboard.org/courses/ap-united-states-history" target="_blank" rel="noopener" class="course-pill">United States History</a>
+        <a href="https://apstudents.collegeboard.org/courses/ap-world-history-modern" target="_blank" rel="noopener" class="course-pill">World History: Modern</a>
+      </div>
+    </div>
+
+    <div class="hs-section">
+      <div class="hs-label">Activities &amp; Societies</div>
+      <div class="activities-list">
+        <span class="activity-chip">Key Club Webmaster</span>
+        <span class="activity-chip">Member, Robotics Team</span>
+        <span class="activity-chip">Member, Debate Club</span>
+        <span class="activity-chip">Weight Room Instructor</span>
+        <span class="activity-chip">Mail Room Monitor</span>
+      </div>
+    </div>
+
+    <div class="hs-section">
+      <div class="hs-label">Awards &amp; Honors</div>
+      <div class="activities-list">
+        <span class="activity-chip">AP Scholar with Distinction (July 2022)</span>
+        <span class="activity-chip">Key Club Member of the Month (March 2022)</span>
+        <span class="activity-chip">QuestBridge National College Match Finalist (October 2021)</span>
+        <span class="activity-chip">QuestBridge College Prep Scholar (April 2021)</span>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 Ezan Khan</span>
+  <a href="mailto:ezankhan2004@gmail.com">Contact Me</a>
+  <span id="live-clock"></span>
+  <div class="footer-links">
+    <a href="../credits/credits.html">Credits</a>
+  </div>
+</footer>
+
+<script src="../shared.js"></script>
+<script>
+  document.querySelectorAll('.cw-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      const target = tab.dataset.tab;
+      document.querySelectorAll('.cw-tab').forEach(t => {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      document.querySelectorAll('.cw-panel').forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+      document.getElementById('tab-' + target).classList.add('active');
+    });
+  });
+</script>
+</body>
+</html>

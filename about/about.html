@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Ezan Khan: interests, hobbies, favorite books, shows, movies, and music.">
+  <title>About Me | Ezan's Portfolio</title>
+  <link rel="stylesheet" href="../shared.css">
+  <link rel="stylesheet" href="about.css">
+</head>
+<body>
+
+<header class="site-header">
+  <button class="hamburger" id="nav-toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="site-nav" id="site-nav">
+    <a href="../home/home.html">Home</a>
+    <a href="about.html" class="active">About Me</a>
+    <a href="../education/education.html">Education</a>
+    <a href="../experiences/experiences.html">Experiences</a>
+    <a href="../projects/projects.html">Projects</a>
+  </nav>
+  <label class="theme-switch" for="theme-toggle" aria-label="Toggle light and dark theme">
+    <input class="theme-checkbox" id="theme-toggle" type="checkbox">
+    <span class="theme-track" aria-hidden="true">
+      <span class="theme-thumb"></span>
+    </span>
+  </label>
+</header>
+
+<main class="page-content">
+
+  <p class="eyebrow">Beyond The Resume</p>
+  <h1 class="page-title">About Me</h1>
+  <div class="divider"></div>
+
+  <section class="about-intro" aria-label="Personal introduction">
+    <p>Hi there! My name is <strong>Ezan</strong>, and welcome to my portfolio site.</p>
+    <p>A little bit about me: I am a huge sports fan, especially soccer (go Arsenal!) and basketball (go Knicks)! In my free time, I enjoy playing pool and handball, as well as learning how to cook new dishes. Right now, I am trying to perfect my bulgogi recipe.</p>
+    <p>A fun fact about me is that I have correctly predicted the last <strong>three FIFA World Cup champions</strong>, going all the way back to 2014. This year, I have <strong>Germany</strong> winning it all, so we will see if the streak continues.</p>
+  </section>
+
+  <section class="favorites-board" aria-labelledby="favorites-heading">
+    <p class="eyebrow" id="favorites-heading">Favorites Board</p>
+
+    <input type="radio" name="favorites" id="fav-books" checked>
+    <input type="radio" name="favorites" id="fav-shows">
+    <input type="radio" name="favorites" id="fav-movies">
+
+    <div class="favorite-tabs" role="tablist" aria-label="Favorite categories">
+      <label for="fav-books" role="tab">Books</label>
+      <label for="fav-shows" role="tab">TV Shows</label>
+      <label for="fav-movies" role="tab">Movies</label>
+    </div>
+
+    <div class="favorite-panels">
+      <div class="favorite-panel panel-books">
+        <div class="book-carousel" aria-label="Favorite books carousel">
+          <article class="book-slide active" style="--cover: url('../sources/about/hedge-knight-bg.png')">
+            <strong>The Hedge Knight</strong>
+            <em>George R. R. Martin</em>
+          </article>
+          <article class="book-slide" style="--cover: url('../sources/about/flowers-for-algernon-bg.png')">
+            <strong>Flowers for Algernon</strong>
+            <em>Daniel Keyes</em>
+          </article>
+          <article class="book-slide" style="--cover: url('../sources/about/fullmetal-alchemist-bg.png')">
+            <strong>Fullmetal Alchemist</strong>
+            <em>Hiromu Arakawa</em>
+          </article>
+          <article class="book-slide" style="--cover: url('../sources/about/dorian-gray-bg.png')">
+            <strong>The Picture of Dorian Gray</strong>
+            <em>Oscar Wilde</em>
+          </article>
+        </div>
+
+        <div class="book-controls" aria-label="Choose a favorite book">
+          <button type="button" class="active">The Hedge Knight</button>
+          <button type="button">Flowers for Algernon</button>
+          <button type="button">Fullmetal Alchemist</button>
+          <button type="button">Dorian Gray</button>
+        </div>
+      </div>
+
+      <div class="favorite-panel panel-shows">
+        <div class="show-carousel" aria-label="Favorite TV shows carousel">
+          <article class="show-slide active" style="--cover: url('../sources/about/parks-and-recreation-bg.png')">
+            <strong>Parks and Recreation</strong>
+          </article>
+          <article class="show-slide" style="--cover: url('../sources/about/shogun-bg.png')">
+            <strong>Shogun</strong>
+          </article>
+          <article class="show-slide" style="--cover: url('../sources/about/avatar-last-airbender-bg.png')">
+            <strong>Avatar: The Last Airbender</strong>
+          </article>
+          <article class="show-slide" style="--cover: url('../sources/about/the-bear-bg.png')">
+            <strong>The Bear</strong>
+          </article>
+          <article class="show-slide" style="--cover: url('../sources/about/how-i-met-your-mother-bg.png')">
+            <strong>How I Met Your Mother</strong>
+          </article>
+          <article class="show-slide" style="--cover: url('../sources/about/game-of-thrones-bg.png')">
+            <strong>Game of Thrones</strong>
+          </article>
+          <article class="show-slide" style="--cover: url('../sources/about/ted-lasso-bg.png')">
+            <strong>Ted Lasso</strong>
+          </article>
+          <article class="show-slide" style="--cover: url('../sources/about/hunter-x-hunter-bg.png')">
+            <strong>Hunter x Hunter (2011)</strong>
+          </article>
+        </div>
+
+        <div class="show-controls" aria-label="Choose a favorite TV show">
+          <button type="button" class="active">Parks and Recreation</button>
+          <button type="button">Shogun</button>
+          <button type="button">Avatar: The Last Airbender</button>
+          <button type="button">The Bear</button>
+          <button type="button">How I Met Your Mother</button>
+          <button type="button">Game of Thrones</button>
+          <button type="button">Ted Lasso</button>
+          <button type="button">Hunter x Hunter (2011)</button>
+        </div>
+      </div>
+
+      <div class="favorite-panel panel-movies">
+        <div class="movie-carousel" aria-label="Favorite movies carousel">
+          <article class="movie-slide active" style="--cover: url('../sources/about/good-will-hunting-bg.png')">
+            <strong>Good Will Hunting</strong>
+          </article>
+          <article class="movie-slide" style="--cover: url('../sources/about/interstellar-bg.png')">
+            <strong>Interstellar</strong>
+          </article>
+          <article class="movie-slide" style="--cover: url('../sources/about/parasite-bg.png')">
+            <strong>Parasite</strong>
+          </article>
+          <article class="movie-slide" style="--cover: url('../sources/about/spider-verse-bg.png')">
+            <strong>Spider-Man: Into the Spider-Verse</strong>
+          </article>
+          <article class="movie-slide" style="--cover: url('../sources/about/tampopo-bg.png')">
+            <strong>Tampopo</strong>
+          </article>
+          <article class="movie-slide" style="--cover: url('../sources/about/whiplash-bg.png')">
+            <strong>Whiplash</strong>
+          </article>
+          <article class="movie-slide" style="--cover: url('../sources/about/the-martian-bg.png')">
+            <strong>The Martian</strong>
+          </article>
+          <article class="movie-slide" style="--cover: url('../sources/about/three-idiots-bg.png')">
+            <strong>3 Idiots</strong>
+          </article>
+        </div>
+
+        <div class="movie-controls" aria-label="Choose a favorite movie">
+          <button type="button" class="active">Good Will Hunting</button>
+          <button type="button">Interstellar</button>
+          <button type="button">Parasite</button>
+          <button type="button">Spider-Man: Into the Spider-Verse</button>
+          <button type="button">Tampopo</button>
+          <button type="button">Whiplash</button>
+          <button type="button">The Martian</button>
+          <button type="button">3 Idiots</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="creative-work" aria-labelledby="creative-heading">
+    <p class="eyebrow" id="creative-heading">Creative Work</p>
+
+    <div class="creative-grid">
+      <article class="creative-card artwork-card">
+        <figure>
+          <figcaption class="artwork-title">
+            <strong>Sunset From Home</strong>
+          </figcaption>
+          <img src="../sources/about/sunset%20from%20home.jpg" alt="Sunset from Home artwork by Ezan Khan">
+          <figcaption>
+            <span>
+              Featured artwork in the 3rd Annual Issue of Boston University's
+              <a href="https://www.bu.edu/newbury-center/files/2024/04/GRATITUDE-ELEVATE-ISSUE-NO.-3-compressed.pdf" target="_blank" rel="noopener">
+                Elevate Magazine
+              </a>
+              (March 2024).
+            </span>
+          </figcaption>
+        </figure>
+      </article>
+
+      <article class="creative-card audio-card">
+        <div>
+          <strong>Raincheck</strong>
+        </div>
+        <audio controls preload="metadata">
+          <source src="../sources/about/raining%20peace.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio>
+        <p>Lofi soundtrack inspired by fall rain (October 2021).</p>
+      </article>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 Ezan Khan</span>
+  <a href="mailto:ezankhan2004@gmail.com">Contact Me</a>
+  <span id="live-clock"></span>
+  <div class="footer-links">
+    <a href="../credits/credits.html">Credits</a>
+  </div>
+</footer>
+
+<script src="../shared.js"></script>
+<script src="about.js"></script>
+</body>
+</html>

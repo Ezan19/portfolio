@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ezan Khan - Electrical engineering and computer science graduate focused on web development and tech-driven product design.">
+  <title>Home | Ezan's Portfolio</title>
+  <link rel="stylesheet" href="../shared.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<header class="site-header">
+  <button class="hamburger" id="nav-toggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="site-nav" id="site-nav">
+    <a href="home.html" class="active">Home</a>
+    <a href="../about/about.html">About Me</a>
+    <a href="../education/education.html">Education</a>
+    <a href="../experiences/experiences.html">Experiences</a>
+    <a href="../projects/projects.html">Projects</a>
+  </nav>
+  <label class="theme-switch" for="theme-toggle" aria-label="Toggle light and dark theme">
+    <input class="theme-checkbox" id="theme-toggle" type="checkbox">
+    <span class="theme-track" aria-hidden="true">
+      <span class="theme-thumb"></span>
+    </span>
+  </label>
+</header>
+
+<main class="page-content">
+
+  <section class="hero">
+
+    <div class="hero-text">
+      <p class="eyebrow">Portfolio</p>
+      <h1 class="hero-name">Ezan Khan</h1>
+
+      <div class="hero-bio">
+        <p class="bio-degree">Electrical engineering and computer science graduate focused on web development and tech-driven product design.</p>
+        <div class="education-summary">
+          <strong>Boston University</strong>
+          <span>B.S. Electrical Engineering</span>
+          <span>Minor in Computer Science</span>
+          <span>Concentration in Business Innovation and Technology</span>
+        </div>
+      </div>
+
+      <div class="hero-highlights" aria-label="Portfolio highlights">
+        <div class="highlight-item">
+          <span class="highlight-value">2026 BU Senior Design:<br>Best PPE Award</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-value">2025 BU x Lutron: Lighting Innovation Competition Winner</span>
+        </div>
+        <div class="highlight-item">
+          <span class="highlight-value">2024 BU Student Employee of the Year Nominee</span>
+        </div>
+      </div>
+
+      <div class="focus-panel">
+        <div class="focus-label">Focus Areas</div>
+        <div class="focus-list">
+          <span>Embedded Systems</span>
+          <span>Web Development</span>
+          <span>Software Engineering</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="hero-aside">
+      <div class="profile-wrap">
+        <img src="../sources/profile.jpg" alt="Ezan Khan">
+      </div>
+      <div class="hero-contact" aria-label="Contact links">
+        <a href="https://github.com/Ezan19" target="_blank" rel="noopener" class="contact-chip">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          GitHub
+        </a>
+        <a href="https://linkedin.com/in/ezan-khan" target="_blank" rel="noopener" class="contact-chip">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+        <a href="mailto:ezankhan2004@gmail.com" class="contact-chip">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Email
+        </a>
+        <span class="contact-chip resume-chip"><span aria-hidden="true">📄</span> Resume</span>
+      </div>
+    </div>
+
+  </section>
+
+  <section class="featured-work" aria-labelledby="featured-heading">
+    <div class="section-heading">
+      <p class="eyebrow" id="featured-heading">Featured Work</p>
+      <a href="../projects/projects.html" class="section-link">All Projects &rarr;</a>
+    </div>
+
+    <div class="feature-grid">
+      <a href="../projects/projects.html" class="feature-card">
+        <strong>Treebot</strong>
+        <span class="feature-desc">Tree-climbing robot with remote web control, actuation, video feedback, and power system design.</span>
+        <span class="feature-kicker">Robotics</span>
+      </a>
+      <a href="../projects/projects.html" class="feature-card">
+        <strong>New England Power Grid Modeling</strong>
+        <span class="feature-desc">Load forecasting and DC optimal power flow on the IEEE-39 bus system.</span>
+        <span class="feature-kicker">Power Systems</span>
+      </a>
+      <a href="../projects/projects.html" class="feature-card">
+        <strong>LEGO Minecraft Lamp System</strong>
+        <span class="feature-desc">Physical redstone logic with embedded control, servo actuation, and a high-output lamp.</span>
+        <span class="feature-kicker">Product Design</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="quick-nav">
+    <a href="../education/education.html" class="qcard">
+      <span class="qcard-title">Education</span>
+      <span class="qcard-sub">Coursework, awards, and academic background</span>
+      <span class="qcard-arrow">&rarr;</span>
+    </a>
+    <a href="../experiences/experiences.html" class="qcard">
+      <span class="qcard-title">Experiences</span>
+      <span class="qcard-sub">Research, teaching, administration, and web work</span>
+      <span class="qcard-arrow">&rarr;</span>
+    </a>
+    <a href="../projects/projects.html" class="qcard">
+      <span class="qcard-title">Projects</span>
+      <span class="qcard-sub">Engineering builds, modeling, and design work</span>
+      <span class="qcard-arrow">&rarr;</span>
+    </a>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <span>© 2026 Ezan Khan</span>
+  <a href="mailto:ezankhan2004@gmail.com">Contact Me</a>
+  <span id="live-clock"></span>
+  <div class="footer-links">
+    <a href="../credits/credits.html">Credits</a>
+  </div>
+</footer>
+
+<script src="../shared.js"></script>
+</body>
+</html>

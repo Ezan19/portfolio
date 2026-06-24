@@ -1,0 +1,107 @@
+/* Match the larger education card rhythm on the experiences page. */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: nowrap;
+}
+
+.card-header-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.card-title {
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+.card-sub {
+  color: var(--text-dim);
+  font-size: 0.88rem;
+  line-height: 1.45;
+  margin-top: 0.25rem;
+}
+
+.card-date {
+  flex-shrink: 0;
+  white-space: nowrap;
+  padding-top: 0.05rem;
+  text-align: right;
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.entry-card {
+  padding: 1.65rem 1.8rem;
+}
+
+.exp-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.exp-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.exp-card::before,
+.exp-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.exp-card::before {
+  background-image:
+    linear-gradient(rgba(16,16,14,0.46), rgba(16,16,14,0.58)),
+    url('../sources/experiences/experience-card-bg.png');
+  background-size: cover;
+  background-position: center var(--card-bg-y, center);
+  opacity: 0.86;
+  z-index: 0;
+}
+
+main > .exp-card:nth-of-type(2) { --card-bg-y: 8%; }
+main > .exp-card:nth-of-type(3) { --card-bg-y: 24%; }
+main > .exp-card:nth-of-type(4) { --card-bg-y: 40%; }
+main > .exp-card:nth-of-type(5) { --card-bg-y: 58%; }
+main > .exp-card:nth-of-type(6) { --card-bg-y: 76%; }
+main > .exp-card:nth-of-type(7) { --card-bg-y: 92%; }
+
+.exp-card::after {
+  background: linear-gradient(90deg, rgba(16,16,14,0.16), rgba(16,16,14,0.42));
+  z-index: 0;
+}
+
+:root[data-theme="light"] .exp-card::before {
+  background-image:
+    linear-gradient(rgba(240,232,220,0.44), rgba(240,232,220,0.56)),
+    url('../sources/experiences/experience-card-bg.png');
+  opacity: 0.86;
+}
+
+:root[data-theme="light"] .exp-card::after {
+  background: linear-gradient(90deg, rgba(240,232,220,0.10), rgba(240,232,220,0.34));
+}
+
+.card-bullets {
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 700px) {
+  .card-header {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .card-date {
+    width: 100%;
+    text-align: left;
+  }
+}
