@@ -12,7 +12,11 @@
   animation: fadeUp 0.5s ease 0.05s both;
 }
 
-.hero-text { min-width: 0; }
+.hero-text {
+  min-width: 0;
+  text-align: center;
+}
+
 
 .hero-name {
   font-family: 'DM Serif Display', serif;
@@ -25,8 +29,9 @@
 
 .hero-bio {
   max-width: 690px;
-  margin-bottom: 1.35rem;
+  margin: 0 auto 1.35rem;
 }
+
 
 .bio-degree {
   max-width: 670px;
@@ -34,8 +39,9 @@
   font-weight: 500;
   color: var(--text);
   line-height: 1.45;
-  margin-bottom: 1rem;
+  margin: 0 auto 1rem;
 }
+
 
 .education-summary {
   max-width: 670px;
@@ -43,7 +49,9 @@
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 0.85rem 1rem;
+  text-align: center;
 }
+
 
 .education-summary strong {
   display: block;
@@ -65,7 +73,7 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.75rem;
   max-width: 690px;
-  margin-bottom: 0.85rem;
+  margin: 0 auto 0.85rem;
 }
 
 .highlight-item {

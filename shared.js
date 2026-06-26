@@ -5,9 +5,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedTheme = localStorage.getItem('portfolio-theme');
   const initialTheme = savedTheme || 'dark';
 
+  const updateFavicon = theme => {
+    const isLight = theme === 'light';
+    const faviconNames = {
+      'any': isLight ? 'favicon-light.ico' : 'favicon.ico',
+      '16x16': isLight ? 'favicon-light-16x16.png' : 'favicon-16x16.png',
+      '32x32': isLight ? 'favicon-light-32x32.png' : 'favicon-32x32.png',
+      'apple': isLight ? 'apple-touch-icon-light.png' : 'apple-touch-icon.png'
+    };
+
+    document.querySelectorAll('link[rel="icon"], link[rel="apple-touch-icon"]').forEach(link => {
+      const href = link.getAttribute('href') || '';
+      const faviconDir = 'sources/favicon/';
+      const dirIndex = href.indexOf(faviconDir);
+
+      if (dirIndex === -1) return;
+
+      const prefix = href.slice(0, dirIndex + faviconDir.length);
+      const sizeKey = link.rel === 'apple-touch-icon' ? 'apple' : link.getAttribute('sizes') || 'any';
+      link.setAttribute('href', `${prefix}${faviconNames[sizeKey] || faviconNames.any}`);
+    });
+  };
+
   const setTheme = theme => {
     document.documentElement.dataset.theme = theme;
     localStorage.setItem('portfolio-theme', theme);
+    updateFavicon(theme);
 
     if (themeToggle) {
       themeToggle.checked = theme === 'dark';
